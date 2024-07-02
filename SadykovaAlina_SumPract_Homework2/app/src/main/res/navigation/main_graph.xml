@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.sadykovaalina_sumpract_homework2.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_restaurantFragment2"
+            app:destination="@id/restaurantFragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_mainFragment_to_castleFragment2"
+            app:destination="@id/castleFragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_mainFragment_to_churchFragment2"
+            app:destination="@id/churchFragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_mainFragment_to_theaterFragment2"
+            app:destination="@id/theaterFragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_mainFragment_to_addLocationFragment"
+            app:destination="@id/addLocationFragment"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/churchFragment"
+        android:name="com.example.sadykovaalina_sumpract_homework2.ChurchFragment"
+        android:label="ChurchFragment"
+        tools:layout="@layout/fragment_church"/>
+    <fragment
+        android:id="@+id/restaurantFragment"
+        android:name="com.example.sadykovaalina_sumpract_homework2.RestaurantFragment"
+        android:label="fragment_restaurant"
+        tools:layout="@layout/fragment_restaurant" />
+    <fragment
+        android:id="@+id/castleFragment"
+        android:name="com.example.sadykovaalina_sumpract_homework2.CastleFragment"
+        android:label="fragment_castle"
+        tools:layout="@layout/fragment_castle" />
+    <fragment
+        android:id="@+id/theaterFragment"
+        android:name="com.example.sadykovaalina_sumpract_homework2.TheaterFragment"
+        android:label="fragment_theater"
+        tools:layout="@layout/fragment_theater" />
+    <fragment
+        android:id="@+id/addLocationFragment"
+        android:name="com.example.sadykovaalina_sumpract_homework2.AddLocationFragment"
+        android:label="fragment_add_location"
+        tools:layout="@layout/fragment_add_location" >
+        <action
+            android:id="@+id/action_addLocationFragment_to_newLocationFragment"
+            app:destination="@id/newLocationFragment"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/newLocationFragment"
+        android:name="com.example.sadykovaalina_sumpract_homework2.NewLocationFragment"
+        android:label="fragment_new_location"
+        tools:layout="@layout/fragment_new_location" >
+        <action
+            android:id="@+id/action_newLocationFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+</navigation>
